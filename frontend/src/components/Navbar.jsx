@@ -26,7 +26,7 @@ const Navbar = () => {
     
   return (
     <div className="flex items-center justify-between px-6 md:px-[200px] py-4  bg-blue-400  text-white" >
-    <h1 className="text-lg md:text-xl font-extrabold"><Link to="/">Blog Market</Link></h1>
+    <h1 className="text-lg md:text-xl font-extrabold"><Link to="/">BlogZen</Link></h1>
     {path==="/" && <div className="flex justify-center items-center space-x-0 ">
     <input onChange={(e)=>setPrompt(e.target.value)} className=" mr-2 outline-none px-3  text-black" placeholder="Search a post" type="text"/>
     <p onClick={()=>navigate(prompt?"?search="+prompt:navigate("/"))} className=" ml-2 cursor-pointer "><BsSearch/></p>
